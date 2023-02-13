@@ -1,0 +1,33 @@
+.wrap {
+  width: 100%;
+  min-height: 100%;
+  /* height: 100vh;*/
+  height: 100%;
+  border: 1px dashed green;
+  padding: 35px;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.drag_el {
+  align-self: flex-start; /* устанавливаем положение синего квадратика в верхнем левом углу*/
+  width: 50px; /* размер сенего квадратика по горизонтали */
+  height: 50px; /* размер сенего квадратика по вертикали */
+  background-color: #5c71d6; /* цвет заливки у квадратика */
+}
+
+.drag_el,
+.drap-zone {
+  border: 1px dashed hsl(0, 98%, 50%); /* цвет кантика у квадратика и рабочей зоны */
+  border-radius: 15px; /* закругления у квадратика и рабочей зоны */
+}
+.drap-zone {
+  width: 500px; /* устанавливаем размер зоны где возможно перетаскивание по ширине */
+  height: 500px; /* устанавливаем размер зоны где возможно перетаскивание по высоте */
+  margin: 0 auto; /* отступ зоны перетаскивания от размера окна*/
+}
